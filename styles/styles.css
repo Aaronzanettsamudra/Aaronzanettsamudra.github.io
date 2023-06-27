@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* styles */
+body{
+    background-color:rgb(78, 175, 255);
+    color: #333;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/email-pattern.webp);
+}
+
+.top-bar{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    height: 60px;
+    background-color: rgb(96, 236, 96);
+    z-index: 999;
+}
+
+.top-bar h1{
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 16px;
+    margin-left: 30px;
+}
+
+.container{
+    margin: auto;
+    width: 850px;
+    background-color: white;
+    border: 4px solid rgb(219, 219, 219);
+    margin: 80px auto;
+}
+
+.header{
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+li a{
+    color: rgb(79, 207, 79);
+    text-decoration: none;
+    padding: 3px;
+}
+a:hover{
+    color: rgb(78, 175, 255);
+    background-color: rgb(248, 248, 248);
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+.img{
+    width: 850px;
+    height: 400px;
+    background-image: url(../img/laptop.jpg);
+    background-size: cover;
+    background-position: 0px -20px;
+    border-top: 5px solid rgb(144, 241, 144);
+    border-bottom: 5px solid rgb(226, 9, 9);
+}
+
+.main{
+    padding: 20px;
+    width: 500px;
+    box-sizing: border-box;
+    float: left;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.main .penulis a{
+    font-style: italic;
+    color: rgb(101, 185, 241);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.main p.penulis{
+    font-size: 13px;
+}
+
+p{
+    font-size: 17px;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.sidebar{
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3{
+    font-weight: 600;
+}
+
+.sidebar img{
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p{
+    font-size: 15px;
+}
+
+/* fb icon */
+.fb{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/facebook.png);
+    text-indent: 55px;
+    position: absolute;
+    right: 270px;
+    bottom: 70px;
+    text-decoration: none;
+    color: blue;
+}
+
+.ig{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(../img/instagram.png);
+    text-indent: 55px;
+    position: absolute;
+    right: 270px;
+    bottom: 10px;
+    text-decoration: none;
+    color: rgb(205, 43, 226);
+}
+
+.content{
+    position: relative;
+}
+
+.footer .copy{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    background-color: gray;
+    padding: 3px;
+}
+
+/* clearfix */
+.content:before,
+.content:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.content:after {
+    clear: both;
+}
+.content {
+    *zoom: 1;
+}
